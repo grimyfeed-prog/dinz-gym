@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Dinz Gym – Premium gym and fitness centre. Personal training, strength & conditioning, group classes, and nutrition guidance. Train with purpose." />
+  <meta name="keywords"
+    content="gym, fitness, personal training, strength conditioning, group classes, Dinz Gym" />
+  <meta property="og:title" content="Dinz Gym – Build Your Strongest Self" />
+  <meta property="og:description"
+    content="Premium gym and fitness centre. Train with purpose. Transform your potential into power." />
+  <meta property="og:type" content="website" />
+  <title>Dinz Gym – Build Your Strongest Self</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏋️</text></svg>" />
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init('5w4JoWwXYL7PGqB6y'); // ✅ Public Key
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Dinz Gym - Home">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">DINZ <span class="logo-accent">GYM</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#trainers" class="nav-link">Trainers</a></li>
+        <li><a href="#gallery" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#membership" class="nav-link nav-cta">JOIN NOW</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false"
+        aria-controls="navLinks">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <div class="hero-bg" id="heroBg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=85&fit=crop" alt=""
+        class="hero-img" id="heroImg" fetchpriority="high" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-label reveal-up">YOUR FITNESS. YOUR FUTURE.</span>
+      <h1 class="hero-title reveal-up delay-1">
+        BUILD YOUR<br /><span class="hero-title-accent">STRONGEST</span><br />SELF.
+      </h1>
+      <p class="hero-subtitle reveal-up delay-2">
+        Push beyond your limits. Train with purpose.<br />Transform your potential into power.
+      </p>
+      <div class="hero-buttons reveal-up delay-3">
+        <a href="#membership" class="btn btn-primary">EXPLORE MEMBERSHIPS</a>
+        <a href="#about" class="btn btn-outline">DISCOVER OUR GYM</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span class="scroll-text">SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+  <section class="section services" id="services" aria-label="Services">
+    <div class="container">
+      <div class="section-header animate-reveal">
+        <span class="section-label">WHAT WE OFFER</span>
+        <h2 class="section-title">TRAIN WITH <span class="accent">PURPOSE.</span></h2>
+        <p class="section-subtitle">Everything you need to build strength, improve performance, and achieve your fitness
+          goals.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card animate-reveal delay-1">
+          <div class="service-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80&fit=crop"
+              alt="Personal Training – one-on-one coaching session" class="service-img" loading="lazy" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon" aria-hidden="true">🎯</div>
+            <h3 class="service-title">PERSONAL TRAINING</h3>
+            <p class="service-desc">Individual coaching with customized training programs tailored to your specific
+              goals and fitness level.</p>
+            <a href="#contact" class="service-link">LEARN MORE <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="service-card animate-reveal delay-2">
+          <div class="service-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80&fit=crop"
+              alt="Strength and Conditioning – barbell training" class="service-img" loading="lazy" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon" aria-hidden="true">💪</div>
+            <h3 class="service-title">STRENGTH & CONDITIONING</h3>
+            <p class="service-desc">Structured workouts focused on building strength, power, and endurance through
+              progressive overload methods.</p>
+            <a href="#contact" class="service-link">LEARN MORE <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="service-card animate-reveal delay-3">
+          <div class="service-img-wrap">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80&fit=crop"
+              alt="Group Fitness – energetic group workout class" class="service-img" loading="lazy" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon" aria-hidden="true">🏃</div>
+            <h3 class="service-title">GROUP FITNESS</h3>
+            <p class="service-desc">Motivating group sessions designed for different fitness levels, combining community
+              energy with expert instruction.</p>
+            <a href="#contact" class="service-link">LEARN MORE <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="service-card animate-reveal delay-4">
+          <div class="service-img-wrap">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80&fit=crop"
+              alt="Nutrition Guidance – healthy meal planning" class="service-img" loading="lazy" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon" aria-hidden="true">🥗</div>
+            <h3 class="service-title">NUTRITION GUIDANCE</h3>
+            <p class="service-desc">General nutrition guidance to support consistent training, fuel performance, and
+              accelerate your recovery.</p>
+            <a href="#contact" class="service-link">LEARN MORE <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section about" id="about" aria-label="About Iron Peak Fitness">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap animate-reveal">
+          <img src="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?w=900&q=80&fit=crop"
+            alt="Premium gym interior with modern equipment at Iron Peak Fitness" class="about-img" loading="lazy" />
+          <div class="about-img-badge animate-reveal delay-2">
+            <span class="badge-number">5+</span>
+            <span class="badge-text">Years of<br />Excellence</span>
+          </div>
+        </div>
+
+        <div class="about-content animate-reveal delay-1">
+          <span class="section-label">ABOUT DINZ GYM</span>
+          <h2 class="section-title">MORE THAN A GYM.<br /><span class="accent">A STANDARD OF<br />EXCELLENCE.</span>
+          </h2>
+          <p class="about-desc">
+            We believe fitness is built through consistency, discipline, and the right environment. Our gym combines
+            modern equipment, expert coaching, and a supportive training community to help every member work toward
+            their personal goals.
+          </p>
+
+          <ul class="about-features" role="list">
+            <li class="about-feature">
+              <div class="feature-icon" aria-hidden="true">✦</div>
+              <div class="feature-text">
+                <strong>Expert Coaching</strong>
+                <span>Certified trainers dedicated to your progress</span>
+              </div>
+            </li>
+            <li class="about-feature">
+              <div class="feature-icon" aria-hidden="true">✦</div>
+              <div class="feature-text">
+                <strong>Modern Training Equipment</strong>
+                <span>State-of-the-art machines and free weights</span>
+              </div>
+            </li>
+            <li class="about-feature">
+              <div class="feature-icon" aria-hidden="true">✦</div>
+              <div class="feature-text">
+                <strong>A Community That Pushes You Forward</strong>
+                <span>Train alongside motivated members who inspire</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary">OUR STORY</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS SECTION ========== -->
+  <section class="stats-section" id="stats" aria-label="Fitness statistics">
+    <div class="stats-bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1920&q=70&fit=crop" alt=""
+        class="stats-bg-img" loading="lazy" />
+      <div class="stats-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item animate-reveal">
+          <span class="stat-number" data-target="500" data-suffix="+">0</span>
+          <span class="stat-label">Members</span>
+        </div>
+        <div class="stat-item animate-reveal delay-1">
+          <span class="stat-number" data-target="15" data-suffix="+">0</span>
+          <span class="stat-label">Expert Trainers</span>
+        </div>
+        <div class="stat-item animate-reveal delay-2">
+          <span class="stat-number" data-target="20" data-suffix="+">0</span>
+          <span class="stat-label">Weekly Classes</span>
+        </div>
+        <div class="stat-item animate-reveal delay-3">
+          <span class="stat-number" data-target="5" data-suffix="+">0</span>
+          <span class="stat-label">Years of Experience</span>
+        </div>
+      </div>
+    </div>
+    <p class="stats-note" aria-label="Demo content notice">* Demonstration figures. Replace with verified client data.
+    </p>
+  </section>
+
+  <!-- ========== TRAINERS SECTION ========== -->
+  <section class="section trainers" id="trainers" aria-label="Our Coaches">
+    <div class="container">
+      <div class="section-header animate-reveal">
+        <span class="section-label">THE TEAM</span>
+        <h2 class="section-title">MEET YOUR <span class="accent">COACHES.</span></h2>
+        <p class="section-subtitle">Fictional trainer profiles for demonstration. Replace with real team information.
+        </p>
+      </div>
+
+      <div class="trainers-grid">
+        <article class="trainer-card animate-reveal delay-1">
+          <div class="trainer-img-wrap">
+            <img src="images/dk-trainer.jpg"
+              alt="DK – Head Strength Coach" class="trainer-img" loading="lazy" />
+            <div class="trainer-overlay">
+              <div class="trainer-social" aria-label="Social links for Alex Ryder">
+                <a href="#" class="trainer-social-link" aria-label="Instagram">📸</a>
+                <a href="#" class="trainer-social-link" aria-label="LinkedIn">💼</a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-body">
+            <h3 class="trainer-name">DK </h3>
+            <span class="trainer-role">Head Strength Coach</span>
+            <p class="trainer-desc">A fictional demo profile. Specialises in powerlifting and athletic performance
+              development.</p>
+          </div>
+        </article>
+
+        <article class="trainer-card animate-reveal delay-2">
+          <div class="trainer-img-wrap">
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=500&q=80&fit=crop&crop=faces"
+              alt="Priya Sharma – Group Fitness Specialist" class="trainer-img" loading="lazy" />
+            <div class="trainer-overlay">
+              <div class="trainer-social" aria-label="Social links for Priya Sharma">
+                <a href="#" class="trainer-social-link" aria-label="Instagram">📸</a>
+                <a href="#" class="trainer-social-link" aria-label="LinkedIn">💼</a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-body">
+            <h3 class="trainer-name">PRIYA SHARMA</h3>
+            <span class="trainer-role">Group Fitness Specialist</span>
+            <p class="trainer-desc">A fictional demo profile. Expert in high-intensity interval training and functional
+              fitness programming.</p>
+          </div>
+        </article>
+
+        <article class="trainer-card animate-reveal delay-3">
+          <div class="trainer-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?w=500&q=80&fit=crop&crop=faces"
+              alt="Marcus Wade – Nutrition & Conditioning Coach" class="trainer-img" loading="lazy" />
+            <div class="trainer-overlay">
+              <div class="trainer-social" aria-label="Social links for Marcus Wade">
+                <a href="#" class="trainer-social-link" aria-label="Instagram">📸</a>
+                <a href="#" class="trainer-social-link" aria-label="LinkedIn">💼</a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-body">
+            <h3 class="trainer-name">MARCUS WADE</h3>
+            <span class="trainer-role">Nutrition & Conditioning Coach</span>
+            <p class="trainer-desc">A fictional demo profile. Focuses on holistic performance combining nutrition
+              strategies with conditioning protocols.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY SECTION ========== -->
+  <section class="section gallery-section" id="gallery" aria-label="Fitness gallery">
+    <div class="container">
+      <div class="section-header animate-reveal">
+        <span class="section-label">THE EXPERIENCE</span>
+        <h2 class="section-title">BUILT FOR <span class="accent">PERFORMANCE.</span></h2>
+        <p class="section-subtitle">A glimpse inside Iron Peak Fitness – where every corner is designed for results.</p>
+      </div>
+
+      <div class="gallery-filters animate-reveal delay-1" role="tablist" aria-label="Gallery filter categories">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">ALL</button>
+        <button class="filter-btn" data-filter="strength" role="tab" aria-selected="false">STRENGTH</button>
+        <button class="filter-btn" data-filter="training" role="tab" aria-selected="false">TRAINING</button>
+        <button class="filter-btn" data-filter="classes" role="tab" aria-selected="false">CLASSES</button>
+        <button class="filter-btn" data-filter="facility" role="tab" aria-selected="false">FACILITY</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <figure class="gallery-item animate-reveal delay-1" data-category="strength">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=700&q=80&fit=crop"
+            alt="Strength training – heavy deadlift" class="gallery-img" loading="lazy" />
+          <figcaption class="gallery-caption">STRENGTH TRAINING</figcaption>
+        </figure>
+
+        <figure class="gallery-item animate-reveal delay-2 gallery-large" data-category="training">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&q=80&fit=crop"
+            alt="Personal training session with coach" class="gallery-img" loading="lazy" />
+          <figcaption class="gallery-caption">PERSONAL TRAINING</figcaption>
+        </figure>
+
+        <figure class="gallery-item animate-reveal delay-3" data-category="facility">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=700&q=80&fit=crop"
+            alt="Modern gym interior with equipment" class="gallery-img" loading="lazy" />
+          <figcaption class="gallery-caption">GYM INTERIOR</figcaption>
+        </figure>
+
+        <figure class="gallery-item animate-reveal delay-2" data-category="classes">
+          <img src="https://images.unsplash.com/photo-1571388208497-71bedc66e932?w=700&q=80&fit=crop"
+            alt="Group fitness class in session" class="gallery-img" loading="lazy" />
+          <figcaption class="gallery-caption">GROUP CLASSES</figcaption>
+        </figure>
+
+        <figure class="gallery-item animate-reveal delay-1 gallery-large" data-category="strength">
+          <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=900&q=80&fit=crop"
+            alt="Olympic barbell weight training" class="gallery-img" loading="lazy" />
+          <figcaption class="gallery-caption">OLYMPIC LIFTING</figcaption>
+        </figure>
+
+        <figure class="gallery-item animate-reveal delay-3" data-category="facility">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&fit=crop"
+            alt="Premium fitness equipment" class="gallery-img" loading="lazy" />
+          <figcaption class="gallery-caption">PREMIUM EQUIPMENT</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MEMBERSHIP SECTION ========== -->
+  <section class="section membership" id="membership" aria-label="Membership plans">
+    <div class="container">
+      <div class="section-header animate-reveal">
+        <span class="section-label">PRICING PLANS</span>
+        <h2 class="section-title">CHOOSE YOUR <span class="accent">PLAN.</span></h2>
+        <p class="section-subtitle">Demo pricing in Indian Rupees. Replace with verified membership rates before going
+          live.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="pricing-card animate-reveal delay-1">
+          <div class="pricing-header">
+            <span class="pricing-tier">BASIC</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency">₹</span>
+              <span class="pricing-price">999</span>
+              <span class="pricing-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features" role="list">
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Gym Access</li>
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Standard Equipment</li>
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Locker Facilities</li>
+            <li class="pricing-feature pricing-feature-disabled"><span class="feature-x" aria-hidden="true">✕</span>
+              Group Fitness Classes</li>
+            <li class="pricing-feature pricing-feature-disabled"><span class="feature-x" aria-hidden="true">✕</span>
+              Personal Training</li>
+            <li class="pricing-feature pricing-feature-disabled"><span class="feature-x" aria-hidden="true">✕</span>
+              Priority Booking</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-full">CHOOSE PLAN</a>
+        </article>
+
+        <article class="pricing-card pricing-featured animate-reveal delay-2" aria-label="Recommended plan">
+          <div class="pricing-badge">MOST POPULAR</div>
+          <div class="pricing-header">
+            <span class="pricing-tier">PRO</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency">₹</span>
+              <span class="pricing-price">1,999</span>
+              <span class="pricing-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features" role="list">
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Full Gym Access</li>
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> All Equipment</li>
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Locker Facilities</li>
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Group Fitness Classes
+            </li>
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Fitness Progress
+              Tracking</li>
+            <li class="pricing-feature pricing-feature-disabled"><span class="feature-x" aria-hidden="true">✕</span>
+              Priority Booking</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-full">CHOOSE PLAN</a>
+        </article>
+
+        <article class="pricing-card animate-reveal delay-3">
+          <div class="pricing-header">
+            <span class="pricing-tier">ELITE</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency">₹</span>
+              <span class="pricing-price">2,999</span>
+              <span class="pricing-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features" role="list">
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Full Gym Access</li>
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> All Equipment</li>
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Locker Facilities</li>
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Group Fitness Classes
+            </li>
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Personal Training
+              Consultation</li>
+            <li class="pricing-feature"><span class="feature-check" aria-hidden="true">✓</span> Priority Class Booking
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-full">CHOOSE PLAN</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS SECTION ========== -->
+  <section class="section testimonials" id="testimonials" aria-label="Member testimonials">
+    <div class="container">
+      <div class="section-header animate-reveal">
+        <span class="section-label">MEMBER STORIES</span>
+        <h2 class="section-title">WHAT MEMBERS <span class="accent">SAY.</span></h2>
+        <p class="section-subtitle">Fictional placeholder testimonials. Replace with genuine reviews from actual
+          members.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card animate-reveal delay-1">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="testimonial-text">
+            "Joining Dinz Gym completely changed my approach to training. The coaches are knowledgeable, the
+            environment is motivating, and I've made more progress in six months than I had in two years elsewhere."
+          </blockquote>
+          <footer class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">RK</div>
+            <div class="author-info">
+              <strong class="author-name">Rohan K.</strong>
+              <span class="author-detail">Member since 2023 · Fictional demo</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card animate-reveal delay-2">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="testimonial-text">
+            "The group fitness classes here are on a different level. The energy, the programming, and the sense of
+            community – it's exactly what I needed to stay consistent and actually enjoy working out."
+          </blockquote>
+          <footer class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">SM</div>
+            <div class="author-info">
+              <strong class="author-name">Sneha M.</strong>
+              <span class="author-detail">Member since 2022 · Fictional demo</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card animate-reveal delay-3">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="testimonial-text">
+            "The Elite membership is worth every rupee. My personal training sessions have been exceptional, and the
+            access to all facilities has made this gym my second home. Highly recommend Dinz Gym."
+          </blockquote>
+          <footer class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">AV</div>
+            <div class="author-info">
+              <strong class="author-name">Arjun V.</strong>
+              <span class="author-detail">Member since 2021 · Fictional demo</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section contact-section" id="contact" aria-label="Contact and enquiry">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info animate-reveal">
+          <span class="section-label">GET IN TOUCH</span>
+          <h2 class="section-title">READY TO<br /><span class="accent">LEVEL UP?</span></h2>
+          <p class="contact-subtitle">Your next chapter starts with one decision. Tell us about your fitness goals and
+            let's get started.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">📍</div>
+              <div class="contact-detail-text">
+                <strong>Location</strong>
+                <span>Alagarkovil, Madurai – 625 301</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">📱</div>
+              <div class="contact-detail-text">
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/918825548192" style="color:inherit">+91 88255 48192</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">✉️</div>
+              <div class="contact-detail-text">
+                <strong>Email</strong>
+                <a href="mailto:dinzfreaky@gmail.com" style="color:inherit">dinzfreaky@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">🕐</div>
+              <div class="contact-detail-text">
+                <strong>Opening Hours</strong>
+                <span>Mon–Sat: 6:00 AM – 10:00 PM<br />Sunday: 8:00 AM – 6:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap animate-reveal delay-1">
+          <div class="demo-notice" role="note">
+            <strong>📧 Connected via EmailJS</strong><br />
+            Submissions are delivered directly to <strong>dinzfreaky@gmail.com</strong> via EmailJS (Service: service_ize4oyk).
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name <span class="required"
+                    aria-hidden="true">*</span></label>
+                <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Your full name"
+                  required autocomplete="name" />
+                <span class="form-error" id="fullNameError" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="required"
+                    aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required
+                  autocomplete="email" />
+                <span class="form-error" id="emailError" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number <span class="required"
+                    aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX" required
+                  autocomplete="tel" pattern="[6-9][0-9]{9}" />
+                <span class="form-error" id="phoneError" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="membership" class="form-label">Membership Interest</label>
+                <select id="membership" name="membership" class="form-input form-select">
+                  <option value="" disabled selected>Select a plan</option>
+                  <option value="basic">Basic – ₹999/month</option>
+                  <option value="pro">Pro – ₹1,999/month</option>
+                  <option value="elite">Elite – ₹2,999/month</option>
+                  <option value="trial">Free Trial Visit</option>
+                  <option value="other">General Enquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" class="form-input form-textarea"
+                placeholder="Tell us about your fitness goals, current experience, or any questions you have…" rows="4"
+                required></textarea>
+              <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full btn-submit" id="submitBtn">
+              SEND ENQUIRY
+            </button>
+          </form>
+
+          <div class="form-success" id="formSuccess" aria-live="polite" hidden>
+            <div class="success-icon" aria-hidden="true">✓</div>
+            <h3>Enquiry Received!</h3>
+            <p>Thank you for your interest in Iron Peak Fitness. This is a frontend demo — connect a backend service to
+              enable real email delivery. In production, the gym team would respond within 24 hours.</p>
+            <button class="btn btn-outline" onclick="resetForm()" type="button">SEND ANOTHER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo footer-logo" aria-label="Dinz Gym - Back to top">
+              <span class="logo-icon">⚡</span>
+              <span class="logo-text">DINZ <span class="logo-accent">GYM</span></span>
+            </a>
+            <p class="footer-desc">Dinz Gym – a premium fitness centre built on the belief that every person has the potential to
+              achieve extraordinary results through consistent training and expert guidance.</p>
+            <div class="footer-social">
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                </svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">QUICK LINKS</h4>
+            <ul role="list">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#services" class="footer-link">Services</a></li>
+              <li><a href="#about" class="footer-link">About</a></li>
+              <li><a href="#trainers" class="footer-link">Trainers</a></li>
+              <li><a href="#gallery" class="footer-link">Gallery</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">SERVICES</h4>
+            <ul role="list">
+              <li><a href="#services" class="footer-link">Personal Training</a></li>
+              <li><a href="#services" class="footer-link">Strength & Conditioning</a></li>
+              <li><a href="#services" class="footer-link">Group Fitness</a></li>
+              <li><a href="#services" class="footer-link">Nutrition Guidance</a></li>
+              <li><a href="#membership" class="footer-link">Membership Plans</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="footer-heading">CONTACT</h4>
+            <address class="footer-address">
+              <p>📍 Alagarkovil,<br />Madurai – 625 301</p>
+              <p>📱 <a href="https://wa.me/918825548192" style="color:inherit">+91 88255 48192</a></p>
+              <p>✉️ <a href="mailto:dinzfreaky@gmail.com" style="color:inherit">dinzfreaky@gmail.com</a></p>
+              <p>🕐 Mon–Sat: 6 AM – 10 PM<br />Sun: 8 AM – 6 PM</p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">
+          &copy; <span id="currentYear"></span> Dinz Gym. All rights reserved.
+          <span class="footer-demo">This is a portfolio demo website.</span>
+        </p>
+        <p class="footer-credits">Designed &amp; built for portfolio demonstration purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"
+      aria-hidden="true">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
